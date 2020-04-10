@@ -6,7 +6,7 @@ import Spinner from "../UI/Spinner/Spinner";
 
 const VideoDetail = ({ video }) => {
   if (!video) return <Spinner />;
-
+  console.log("video", video);
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
   return (
     <React.Fragment>
